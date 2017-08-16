@@ -1,10 +1,10 @@
-drop database if exists myblog;
+drop database if exists db_localhost;
 
-create database myblog;
+create database db_localhost;
 
-use myblog;
+use db_localhost;
 
-grant select, insert, update, delete on myblog.* to 'cc'@'localhost' identified by 'password';
+grant select, insert, update, delete on db_localhost.* to 'root'@'localhost' identified by 'password';
 
 create table users (
     `id` varchar(50) not null,
