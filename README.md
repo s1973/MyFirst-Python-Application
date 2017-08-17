@@ -23,6 +23,7 @@ http://t.cn/R2PDyWN
 1. `__new__()`方法是在类准备将自身实例化时调用
 2. 定义 class Model(dict,metaclass=ModelMetaclass) 时 此时创建了一个class Model对象 因为定义了metaclass 所以是根据ModelMetaclass来创建Model这个对象的 相当于将ModelMetaclass实例化 调用其__new__方法
 3. 定义 class User(Model) 时 此时创建了一个class User对象 User是继承自Model的 因此也就是通过Model 也就是ModelMetaclass创建的一个对象 因此也调用了ModelMetaclass的__new__方法
+4. 定义派生类__init__方法时必须先显式调用其父类的__init__方法 否则会报错 因为不重写__init__时解释器会自动调用超类中已定义的__init__方法
 
 > Python头注释及多行注释
 
