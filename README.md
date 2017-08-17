@@ -23,3 +23,10 @@ http://t.cn/R2PDyWN
 1. `__new__()`方法是在类准备将自身实例化时调用
 2. 定义 class Model(dict,metaclass=ModelMetaclass) 时 此时创建了一个class Model对象 因为定义了metaclass 所以是根据ModelMetaclass来创建Model这个对象的 相当于将ModelMetaclass实例化 调用其__new__方法
 3. 定义 class User(Model) 时 此时创建了一个class User对象 User是继承自Model的 因此也就是通过Model 也就是ModelMetaclass创建的一个对象 因此也调用了ModelMetaclass的__new__方法
+
+> Python头注释及多行注释
+
+1. `#!/usr/bin/env python3`声明该文件需要python环境运行 在linux mac下配置好path可以直接双击运行
+2. `# -*- coding: utf-8 -*-`声明编码 文件中有中文时必须声明
+3. python中除头注释外第一行字符串通常为该文件的介绍文字 不会进行解释
+4. 多行注释 `三对单引号或三对双引号 `  (注意和多行字符串一样)
