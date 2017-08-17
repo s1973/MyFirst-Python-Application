@@ -18,7 +18,7 @@ http://t.cn/R2PDyWN
 2. @staticmethod 运行时既不需要类也不需要类的实例参与的方法
 3. how to use : [https://stackoverflow.com/](https://stackoverflow.com/questions/12179271/meaning-of-classmethod-and-staticmethod-for-beginner/12179752#12179752)
 
-> 关于继承中的 MetaClass 和 __new__
+> 关于继承中的 MetaClass 和 \_\_new\_\_
 
 1. `__new__()`方法是在类准备将自身实例化时调用
 2. 定义 class Model(dict,metaclass=ModelMetaclass) 时 此时创建了一个class Model对象 因为定义了metaclass 所以是根据ModelMetaclass来创建Model这个对象的 相当于将ModelMetaclass实例化 调用其__new__方法
