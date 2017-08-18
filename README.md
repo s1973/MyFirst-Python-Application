@@ -44,4 +44,5 @@ http://t.cn/R2PDyWN
 1. super不是一个函数 而是一个类名 super(B,self)事实上调用了super类的初始化函数 产生了一个super对象
 2. super类的初始化函数并没有做什么特殊的操作 只是简单记录了类类型和具体实例
 3. super(B,self).func 调用的是B的MRO列表中的下一个类的方法 而非简单理解的父类
-4. Python的多重继承类是通过MRO的方式保证各个父类的函数被逐一调用 而且只调用一次 因此要么每个类都使用super 要么都不用 不要混用
+4. Python的多重继承类是通过MRO的方式保证各个父类的函数被逐一调用 而且只调用一次 因此建议每个类都使用super 不要直接使用基类名去调用方法
+5. reference: [http://blog.csdn.net/](http://blog.csdn.net/damiaomiao666/article/details/51473199)
