@@ -9,6 +9,7 @@ http://t.cn/R2PDyWN
 * pip install aiohttp
 * pip install jinja2
 * pip install aiomysql
+* pip install watchdog
 
 <br/> 
 
