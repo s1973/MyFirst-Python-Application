@@ -4,7 +4,7 @@ create database db_localhost;
 
 use db_localhost;
 
-grant select, insert, update, delete on db_localhost.* to 'root'@'localhost' identified by 'password';
+-- grant select, insert, update, delete on db_localhost.* to 'root'@'localhost' identified by 'password';
 
 create table users (
     `id` varchar(50) not null,
